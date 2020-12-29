@@ -1,11 +1,19 @@
-  {
-    "name": "NoTab",
-    "version": "0.1",
-    "description": "Less tab than OneTab!",
-    "manifest_version": 2,
+{
+  "name": "NoTab",
+  "version": "0.1",
+  "description": "Less tab than OneTab!",
+  "manifest_version": 2,
+  "homepage_url": "https://github.com/StanHustler/NoTab",
+  "permissions": ["tabs", "storage"],
 
-    "browser_action": {
-      "default_popup": "popup.html"
-      // "default_icon": "hello_extensions.png"
-    }
-  }	
+  "browser_action": {
+    "default_title": "NoTab\n\n单击打开面板",
+    "default_popup": "popup.html"
+    // "default_icon": "hello_extensions.png"
+  },
+
+  "background":
+  {
+    "page": "background.html"
+  }
+}
